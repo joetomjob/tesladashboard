@@ -1,0 +1,27 @@
+.maingrid{
+  display: grid;
+  grid: 1fr 1fr / 1fr 1fr 1fr;
+  grid-gap: 10px;
+  height: 90vh;;
+}
+
+.maingrid div{
+  border-color: white;
+  border-style: solid;
+}
+
+.chargefirmgrid{
+  display: grid;
+  grid: 50% 50% / 1fr;
+}
+
+.chargefirmgrid div{
+  border-color: white;
+  border-style: solid;
+}
+
+.config{
+  background-image:url( /assets/images/background/teslaimg2.png );
+  background-repeat:no-repeat;
+  background-size:cover;
+}

@@ -1,0 +1,128 @@
+.bodycontrolgrid{
+  display: grid;
+  grid: 1fr 1fr 1fr 1fr / 1fr 1fr;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  grid-template-areas:
+    "a b"
+    "c d"
+    "e f"
+    "g h";
+}
+
+.sunrooft{
+  grid-area: a;
+  margin: auto auto;
+}
+
+.sunroofv{
+  grid-area: b;
+  margin: auto auto;
+}
+
+.doorstext{
+  grid-area: c;
+  margin: auto auto;
+}
+
+.doorsvalue{
+  grid-area: d;
+  margin: auto auto;
+}
+
+.chargeporttext{
+  grid-area: e;
+  margin: auto auto;
+}
+
+.chargeportvalue{
+  grid-area: f;
+  margin: auto auto;
+}
+
+.windowstext{
+  grid-area: g;
+  margin: auto auto;
+}
+
+.windowsvalue{
+  grid-area: h;
+  margin: auto auto;
+}
+
+.textSmall{
+  color: white;
+  font-size: 12px;
+  font-family: Arial;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.text{
+  color: white;
+  font-size: 20px;
+  font-family: Arial;
+}
+
+.textLarge{
+  color: white;
+  font-size: 50px;
+  font-family: Helvetica, sans-serif;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: green;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px green;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

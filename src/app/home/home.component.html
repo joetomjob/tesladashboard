@@ -1,9 +1,25 @@
-<div>
-  <app-bodycontrols></app-bodycontrols>
-  <app-configuration></app-configuration>
-  <app-driverstate></app-driverstate>
-  <app-firmware></app-firmware>
-  <app-hvac></app-hvac>
-  <app-identity></app-identity>
-  <app-stateofcharge></app-stateofcharge>
+<div class="maingrid">
+  <div>
+    <app-driverstate></app-driverstate>
+  </div>
+  <div>
+    <app-identity></app-identity>
+  </div>
+  <div  class="chargefirmgrid">
+    <div>
+      <app-stateofcharge></app-stateofcharge>
+    </div>
+    <div>
+      <app-firmware></app-firmware>
+    </div>
+  </div>
+  <div>
+    <app-bodycontrols></app-bodycontrols>
+  </div>
+  <div class="config">
+    <app-configuration></app-configuration>
+  </div>
+  <div>
+    <app-hvac></app-hvac>
+  </div>
 </div>

@@ -9,10 +9,12 @@ import { DriverstateComponent } from './shared/components/driverstate/driverstat
 import { BodycontrolsComponent } from './shared/components/bodycontrols/bodycontrols.component';
 import { HvacComponent } from './shared/components/hvac/hvac.component';
 import { FirmwareComponent } from './shared/components/firmware/firmware.component';
-import { BodycontrolsdynamicComponent } from './shared/components/bodycontrolsdynamic/bodycontrolsdynamic.component';
-import { HvacdynamicComponent } from './shared/components/hvacdynamic/hvacdynamic.component';
 import { HomeComponent } from './home/home.component';
 import {HttpClientModule} from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { MatCommonModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -24,13 +26,15 @@ import {HttpClientModule} from '@angular/common/http';
     BodycontrolsComponent,
     HvacComponent,
     FirmwareComponent,
-    BodycontrolsdynamicComponent,
-    HvacdynamicComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
+    MatCommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

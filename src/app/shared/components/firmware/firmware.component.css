@@ -1,0 +1,46 @@
+.firmwaregrid{
+  display: grid;
+  grid: 1fr 1fr / 1fr 1fr;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  grid-template-areas:
+    "a b"
+    "c c";
+}
+
+.installed{
+  grid-area: a;
+}
+
+.installing{
+  grid-area: b;
+}
+
+.installingbar{
+  grid-area: c;
+}
+
+.myProgress {
+  width: 70%;
+  background-color: grey;
+  margin: 0 auto;
+}
+
+.myBar {
+  height: 30px;
+  background-color: green;
+}
+
+.textSmall{
+  color: white;
+  font-size: 12px;
+  font-family: Arial;
+}
+
+.text{
+  color: white;
+  font-size: 20px;
+  font-family: Arial;
+}
+

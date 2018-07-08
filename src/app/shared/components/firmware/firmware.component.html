@@ -1,3 +1,15 @@
-<p class="body">
-  firmware works!
-</p>
+<div class="firmwaregrid">
+  <div class="installed">
+    <p class="textSmall">Installed Version</p>
+    <p class="text">{{_installedVersion}}</p>
+  </div>
+  <div class="installing">
+    <p class="textSmall">Installing Version</p>
+    <p class="text">{{_installingVersion}}</p>
+  </div>
+  <div class="installingbar">
+    <div class="myProgress">
+      <div class="myBar" [style.width.%]="_installingJobPercent"></div>
+    </div>
+  </div>
+</div>

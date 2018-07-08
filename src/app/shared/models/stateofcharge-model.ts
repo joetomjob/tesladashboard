@@ -1,6 +1,7 @@
 export class StateOfChare {
   percentRemaining: number = -1;
   remainingMileage: number = -1;
+  range: number = -1;
 
   static asStateOfCharge(json: any): StateOfChare {
     const li: StateOfChare = Object.assign(new StateOfChare(), json);

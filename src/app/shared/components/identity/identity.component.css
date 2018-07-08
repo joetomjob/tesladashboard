@@ -1,0 +1,46 @@
+.identitygrid{
+  display: grid;
+  grid: 1fr 1fr 1fr 1fr / 1fr 1fr;
+  height: 100%;
+  width: 100%;
+  grid-template-areas:
+    "a a"
+    "a a"
+    "b b"
+    "c d";
+  text-align: center;
+}
+
+.nickname{
+  grid-area: a;
+}
+
+.vin{
+  grid-area: b;
+}
+
+.dbid{
+  grid-area: c;
+}
+
+.environment{
+  grid-area: d;
+}
+
+.textSmall{
+  color: white;
+  font-size: 12px;
+  font-family: Arial;
+}
+
+.text{
+  color: white;
+  font-size: 20px;
+  font-family: Arial;
+}
+
+.textLarge{
+  color: white;
+  font-size: 50px;
+  font-family: Helvetica, sans-serif;
+}

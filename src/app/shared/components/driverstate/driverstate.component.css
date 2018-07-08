@@ -1,0 +1,47 @@
+.dsgrid{
+  display: grid;
+  grid: 1fr 1fr 1fr 1fr / 1fr;
+  height: 100%;
+  width: 100%;
+  grid-template-areas:
+      "a"
+      "a"
+      "b"
+      "c";
+  text-align: center;
+}
+
+.dsgrid div{
+  border-color: white;
+  border-style: solid;
+}
+
+.speed{
+  grid-area: a;
+}
+
+.acceleration{
+  grid-area: b;
+}
+
+.gear{
+  grid-area: c;
+}
+
+.textSmall{
+  color: white;
+  font-size: 12px;
+  font-family: Arial;
+}
+
+.text{
+  color: white;
+  font-size: 20px;
+  font-family: Arial;
+}
+
+.textLarge{
+  color: white;
+  font-size: 60px;
+  font-family: Helvetica, sans-serif;
+}

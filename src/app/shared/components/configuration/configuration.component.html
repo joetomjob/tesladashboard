@@ -1,3 +1,40 @@
-<p class="body">
-  configuration works!
-</p>
+<div class="configgrid">
+  <div class="model">
+    <p class="textSmall">Model</p>
+    <p class="textLarge">{{_model}}</p>
+  </div>
+  <div class="carcolortext">
+    <p class="text">Color</p>
+  </div>
+  <div class="carcolorvalue">
+    <p class="text">{{_color}}</p>
+  </div>
+  <div class="wheeltypetext">
+    <p class="text">Wheel Type</p>
+  </div>
+  <div class="wheeltypevalue">
+    <p class="text">{{_wheel}}</p>
+  </div>
+  <div class="sunrooftext">
+    <p class="text">Sunroof</p>
+  </div>
+  <div class="sunroofvalue textSmall">
+    <span class="textSmall"> NO </span>
+    <label class="switch">
+      <input type="checkbox" disabled="true" [checked]="_sunroof">
+      <span class="slider round"></span>
+    </label>
+    <span class="textSmall"> YES </span>
+  </div>
+  <div class="dualmotortext">
+    <p class="text">Dual Motor</p>
+  </div>
+  <div class="dualmotorvalue">
+    <span class="textSmall"> NO </span>
+    <label class="switch">
+      <input type="checkbox" disabled="true" [checked]="_dualmotor">
+      <span class="slider round"></span>
+    </label>
+    <span class="textSmall"> YES </span>
+  </div>
+</div>

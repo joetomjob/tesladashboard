@@ -1,3 +1,20 @@
-<p class="body">
-  hvac works!
-</p>
+<div class="hvacgrid">
+  <div class="ambtemp">
+    <p class="textSmall">Ambient Temperature</p>
+    <p class="text">{{_ambienttemp}}°F</p>
+  </div>
+  <div class="exttemp">
+    <p class="textSmall">External Temperature</p>
+    <p class="text">{{_externaltemp}}°F</p>
+  </div>
+  <div class="tempcontrol">
+    <p class="textSmall">Temperature</p>
+    <input type="range" min="1" max="100" class="slider" [(ngModel)]="_tempSlider">
+    <p class="text">{{_tempSlider}}°F</p>
+  </div>
+  <div class="fanspeed">
+    <p class="textSmall">Fan Speed</p>
+    <input type="range" min="1" max="5" class="slider" [(ngModel)]="_fanspeed">
+    <p class="text">{{_fanspeed}}</p>
+  </div>
+</div>

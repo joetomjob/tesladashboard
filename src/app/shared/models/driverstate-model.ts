@@ -1,7 +1,7 @@
 export class DriverState {
   speed: number = -1;
   acceleration: number = -1;
-  gear: number = -1;
+  gear: string = '';
 
   static asDriverState(json: any): DriverState {
     const li: DriverState = Object.assign(new DriverState(), json);

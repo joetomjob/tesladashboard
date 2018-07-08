@@ -1,0 +1,55 @@
+.stateofchargegrid{
+  display: grid;
+  grid: 1fr 1fr/ 1fr;
+  height: 100%;
+  width: 100%;
+}
+
+.textSmall{
+  color: white;
+  font-size: 12px;
+  font-family: Arial;
+  text-align: center;
+}
+
+.text{
+  color: white;
+  font-size: 20px;
+  font-family: Arial;
+  text-align: center;
+}
+
+.battery:after {
+  background-color: #000;
+  border: 2px solid #fff;
+  content: "";
+  display: block;
+  height: 16px;
+  position: absolute;
+  right: -6px;
+  top: 6px;
+  width: 6px;
+}
+.battery {
+  background-color: #333333;
+  border: 2px solid #fff;
+  height: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 130px;
+  margin-top: 5px;
+}
+
+.battery-level-high {
+  background-color: green;
+  height: 100%;
+}
+.battery-level-medium {
+  background-color: #CCA300;
+  height: 100%;
+}
+.battery-level-low {
+  background-color: #FF3333;
+  height: 100%;
+}

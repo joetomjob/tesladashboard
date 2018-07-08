@@ -1,12 +1,12 @@
 {
   "identity": {
     "vehicledatabaseid":80,
-    "vin":"2FTEF14NXJCA59714",
+    "vin":"5YJEF14NXJCA59714",
     "nickname":"Lightning McQueen",
     "environment":"engineering)"
   },
   "configuration": {
-    "model":"3",
+    "model":"S",
     "color":"blue",
     "wheel":"21’’ grey turbines",
     "sunroof":true,
@@ -14,12 +14,13 @@
   },
   "stateOfCharge": {
     "percentRemaining":80,
-    "remainingMileage":248
+    "remainingMileage":248,
+    "range":310
   },
   "driverState": {
     "speed":70,
     "acceleration":20,
-    "gear":4
+    "gear":"D"
   },
   "bodyControls": {
     "sunroof": true,
