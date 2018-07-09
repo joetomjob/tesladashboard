@@ -53,7 +53,7 @@
 
 .textSmall{
   color: white;
-  font-size: 12px;
+  font-size: 1.25vmin;
   font-family: Arial;
   margin-right: 10px;
   margin-left: 10px;
@@ -61,21 +61,15 @@
 
 .text{
   color: white;
-  font-size: 20px;
+  font-size: 2vmin;
   font-family: Arial;
-}
-
-.textLarge{
-  color: white;
-  font-size: 50px;
-  font-family: Helvetica, sans-serif;
 }
 
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 3.2vw;
+  height: 1.7vw;
 }
 
 .switch input {display:none;}
@@ -95,10 +89,10 @@
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
+  height: 1.5vw;
+  width: 1.5vw;
+  left: 0.1vw;
+  bottom: 0.1vw;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
@@ -113,14 +107,14 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  -webkit-transform: translateX(1.5vw);
+  -ms-transform: translateX(1.5vw);
+  transform: translateX(1.5vw);
 }
 
 /* Rounded sliders */
 .slider.round {
-  border-radius: 34px;
+  border-radius: 1.1vw;
 }
 
 .slider.round:before {

@@ -29,18 +29,18 @@
 
 .textSmall{
   color: white;
-  font-size: 12px;
+  font-size: 1.25vmin;
   font-family: Arial;
 }
 
 .text{
   color: white;
-  font-size: 20px;
+  font-size: 2vmin;
   font-family: Arial;
 }
 
 .textLarge{
   color: white;
-  font-size: 50px;
+  font-size: 4vmin;
   font-family: Helvetica, sans-serif;
 }

@@ -1,25 +1,29 @@
-<div class="maingrid">
-  <div>
-    <app-driverstate></app-driverstate>
-  </div>
-  <div>
-    <app-identity></app-identity>
-  </div>
-  <div  class="chargefirmgrid">
-    <div>
-      <app-stateofcharge></app-stateofcharge>
+<div class="parentgrid">
+  <div class="maingrid">
+    <div style="width: 33vw">
+      <app-driverstate></app-driverstate>
     </div>
-    <div>
-      <app-firmware></app-firmware>
+    <div style="width: 33%">
+      <app-identity></app-identity>
+    </div>
+    <div  class="chargefirmgrid">
+      <div>
+        <app-stateofcharge></app-stateofcharge>
+      </div>
+      <div>
+        <app-firmware></app-firmware>
+      </div>
     </div>
   </div>
-  <div>
-    <app-bodycontrols></app-bodycontrols>
-  </div>
-  <div class="config">
-    <app-configuration></app-configuration>
-  </div>
-  <div>
-    <app-hvac></app-hvac>
+  <div class="maingrid">
+    <div style="width: 33vw">
+      <app-bodycontrols></app-bodycontrols>
+    </div>
+    <div class="config">
+      <app-configuration></app-configuration>
+    </div>
+    <div style="width: 33vw">
+      <app-hvac></app-hvac>
+    </div>
   </div>
 </div>

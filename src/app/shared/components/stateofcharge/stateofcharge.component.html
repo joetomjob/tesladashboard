@@ -1,7 +1,7 @@
 <div class="stateofchargegrid">
   <div>
     <p class="textSmall">Charge Remaining</p>
-    <div class="battery text">
+    <div class="battery textSmall">
       <div [ngClass]="_percentRemaining?getChargeClass():''" [style.width.%]="_percentRemaining">
         {{_percentRemaining}}%
       </div>
@@ -9,7 +9,7 @@
   </div>
   <div>
     <p class="textSmall">Mileage Remaining</p>
-    <div class="battery text">
+    <div class="battery textSmall">
       <div [ngClass]="_remainingMileage?getMileageClass():''" [style.width.%]="_mileagepercent">
         {{_remainingMileage}}miles
       </div>

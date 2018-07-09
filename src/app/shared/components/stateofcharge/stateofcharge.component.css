@@ -7,38 +7,31 @@
 
 .textSmall{
   color: white;
-  font-size: 12px;
-  font-family: Arial;
-  text-align: center;
-}
-
-.text{
-  color: white;
-  font-size: 20px;
+  font-size: 1.25vmin;
   font-family: Arial;
   text-align: center;
 }
 
 .battery:after {
   background-color: #000;
-  border: 2px solid #fff;
+  border: 0.05vmax solid #fff;
   content: "";
   display: block;
-  height: 16px;
+  height: 1.5vh;
   position: absolute;
-  right: -6px;
-  top: 6px;
-  width: 6px;
+  right: -0.35vw;
+  top: 0.55vh;
+  width: 0.2vw;
 }
 .battery {
   background-color: #333333;
-  border: 2px solid #fff;
-  height: 32px;
+  border: 0.05vmax solid #fff;
+  height: 3vh;
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  width: 130px;
-  margin-top: 5px;
+  width: 10vw;
+  margin-top: 1vh;
 }
 
 .battery-level-high {
