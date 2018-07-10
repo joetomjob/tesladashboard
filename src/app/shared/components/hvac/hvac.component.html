@@ -9,12 +9,12 @@
   </div>
   <div class="tempcontrol">
     <p class="textSmall">Temperature</p>
-    <input type="range" min="1" max="100" class="slider" [(ngModel)]="_tempSlider">
+    <input type="range" min="32" max="90" class="slider" [(ngModel)]="_tempSlider" (change)="hvacChange()">
     <p class="text">{{_tempSlider}}°F</p>
   </div>
   <div class="fanspeed">
     <p class="textSmall">Fan Speed</p>
-    <input type="range" min="1" max="5" class="slider" [(ngModel)]="_fanspeed">
+    <input type="range" min="1" max="5" class="slider" [(ngModel)]="_fanspeed" (change)="hvacChange()">
     <p class="text">{{_fanspeed}}</p>
   </div>
 </div>

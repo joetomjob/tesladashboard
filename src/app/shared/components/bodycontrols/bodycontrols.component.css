@@ -51,13 +51,6 @@
   margin: auto auto;
 }
 
-.textSmall{
-  color: white;
-  font-size: 1.25vmin;
-  font-family: Arial;
-  margin-right: 10px;
-  margin-left: 10px;
-}
 
 .text{
   color: white;
@@ -103,7 +96,7 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px green;
+  box-shadow: 0 0 1vw green;
 }
 
 input:checked + .slider:before {

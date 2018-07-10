@@ -1,7 +1,6 @@
 import { Component, OnInit, NgModule } from '@angular/core';
-import {VehicleService} from '../../mock-services/vehicle.service';
+import { ConfigurationService } from '../../services/configuration-service';
 import {Configuration} from '../../models/configuration-model';
-import {el} from '@angular/platform-browser/testing/src/browser_util';
 
 @Component({
   selector: 'app-configuration',
@@ -17,7 +16,7 @@ export class ConfigurationComponent implements OnInit {
   _dualmotor: boolean = false;
   _sunroofString: string = '';
   _dualmotorString: string = '';
-  constructor(public _myService: VehicleService) { }
+  constructor(public _myService: ConfigurationService) { }
 
   ngOnInit() {
     this._myService.getConfigurationInfo()
@@ -42,21 +41,4 @@ export class ConfigurationComponent implements OnInit {
         console.log(err);
       });
   }
-
-  public sunrooftoggle() {
-    if (this._sunroof) {
-      return 'yes';
-    } else {
-      return 'no';
-    }
-  }
-
-  public dualMotortoggle() {
-    if (this._dualmotor) {
-      return 'yes';
-    } else {
-      return 'no';
-    }
-  }
-
 }

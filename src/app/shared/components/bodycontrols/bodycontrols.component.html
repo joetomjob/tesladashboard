@@ -4,7 +4,7 @@
   </div>
   <div class="sunroofv">
     <label class="switch">
-      <input type="checkbox" [(checked)]="_sunroof">
+      <input type="checkbox" [(checked)]="_sunroof" [(ngModel)]="_sunroof" (change)="bodyControlChange()">
       <span class="slider round"></span>
     </label>
   </div>
@@ -13,7 +13,7 @@
   </div>
   <div class="doorsvalue">
     <label class="switch">
-      <input type="checkbox" [(checked)]="_doors">
+      <input type="checkbox" [(checked)]="_doors" [(ngModel)]="_doors" (change)="bodyControlChange()">
       <span class="slider round"></span>
     </label>
   </div>
@@ -22,7 +22,7 @@
   </div>
   <div class="chargeportvalue">
     <label class="switch">
-      <input type="checkbox" [(checked)]="_chargeport">
+      <input type="checkbox" [(checked)]="_chargeport" [(ngModel)]="_chargeport" (change)="bodyControlChange()">
       <span class="slider round"></span>
     </label>
   </div>
@@ -31,7 +31,7 @@
   </div>
   <div class="windowsvalue">
     <label class="switch">
-      <input type="checkbox" [(checked)]="_windows">
+      <input type="checkbox" [(checked)]="_windows" [(ngModel)]="_windows" (change)="bodyControlChange()">
       <span class="slider round"></span>
     </label>
   </div>

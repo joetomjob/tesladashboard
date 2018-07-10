@@ -45,3 +45,8 @@
   font-size: 4vmin;
   font-family: Helvetica, sans-serif;
 }
+
+.image{
+  width: 2vh;
+  height: 2vh;
+}

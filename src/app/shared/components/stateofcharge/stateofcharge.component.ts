@@ -8,23 +8,54 @@ import {StateOfChare} from '../../models/stateofcharge-model';
   styleUrls: ['./stateofcharge.component.css']
 })
 export class StateofchargeComponent implements OnInit {
+  counter: number = 0;
   _stateofcharge: StateOfChare;
-  _percentRemaining: number = -1;
-  _remainingMileage: number = -1;
+  _percentRemaining: number = 0;
+  _remainingMileage: number = 0;
   _range: number = -1;
   _mileagepercent: number = -1;
   constructor(public _myService: VehicleService) { }
 
   ngOnInit() {
-    this._myService.getStateOfChargeInfo()
-      .subscribe((sc: StateOfChare) => {
-        this._stateofcharge = sc;
-        this._percentRemaining = this._stateofcharge.percentRemaining;
-        this._remainingMileage = this._stateofcharge.remainingMileage;
-        this._range = this._stateofcharge.range;
-      }, (err: any) => {
-        console.log(err);
-      });
+    this.refreshData();
+    setInterval(() => this.refreshData(), 5000);
+  }
+
+  public refreshData() {
+    if (this.counter === 0) {
+      this._myService.getStateOfChargeInfo()
+        .subscribe((sc: StateOfChare) => {
+          this._stateofcharge = sc;
+          this._percentRemaining = this._stateofcharge.percentRemaining;
+          this._remainingMileage = this._stateofcharge.remainingMileage;
+          this._range = this._stateofcharge.range;
+          this.counter = this.counter + 1;
+        }, (err: any) => {
+          console.log(err);
+        });
+    } else if (this.counter === 1 ){
+      this._myService.getStateOfChargeInfo2()
+        .subscribe((sc: StateOfChare) => {
+          this._stateofcharge = sc;
+          this._percentRemaining = this._stateofcharge.percentRemaining;
+          this._remainingMileage = this._stateofcharge.remainingMileage;
+          this._range = this._stateofcharge.range;
+          this.counter = this.counter + 1;
+        }, (err: any) => {
+          console.log(err);
+        });
+    } else {
+      this._myService.getStateOfChargeInfo3()
+        .subscribe((sc: StateOfChare) => {
+          this._stateofcharge = sc;
+          this._percentRemaining = this._stateofcharge.percentRemaining;
+          this._remainingMileage = this._stateofcharge.remainingMileage;
+          this._range = this._stateofcharge.range;
+          this.counter = 0;
+        }, (err: any) => {
+          console.log(err);
+        });
+    }
   }
 
   public getChargeClass() {

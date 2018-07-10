@@ -31,7 +31,8 @@
   "hvac": {
     "ambientTemp":70,
     "externalTemp":34,
-    "fanspeed":2
+    "fanspeed":2,
+    "sliderTemp":34
   },
   "firmware": {
     "installedVersion":"1.2",
