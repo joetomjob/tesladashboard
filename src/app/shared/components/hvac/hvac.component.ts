@@ -51,16 +51,18 @@ export class HvacComponent implements OnInit {
           this._ambienttemp = this._hvac.ambientTemp;
           this._externaltemp = this._hvac.externalTemp;
           this._fanspeed = this._hvac.fanspeed;
+          this.counter = this.counter + 1;
         }, (err: any) => {
           console.log(err);
         });
     } else {
-      this._myService.getHVACInfo()
+      this._myService.getHVACInfo2()
         .subscribe((hv: HVAC) => {
           this._hvac = hv;
           this._ambienttemp = this._hvac.ambientTemp;
           this._externaltemp = this._hvac.externalTemp;
           this._fanspeed = this._hvac.fanspeed;
+          this.counter = 0;
         }, (err: any) => {
           console.log(err);
         });

@@ -16,6 +16,7 @@ export class DriverstateComponent implements OnInit {
   constructor(public _myService: DriverstateService) { }
 
   ngOnInit() {
+    this.refreshData();
     setInterval(() => this.refreshData(), 250);
   }
 
