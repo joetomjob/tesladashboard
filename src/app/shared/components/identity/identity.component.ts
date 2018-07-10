@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {VehicleService} from '../../mock-services/vehicle.service';
+import { IdentityService } from '../../services/identity-service';
 import {Identity} from '../../models/identity-model';
 
 @Component({
@@ -13,7 +13,7 @@ export class IdentityComponent implements OnInit {
   _vin: string = '';
   _vehicledbId: number = -1;
   _environment: string = '';
-  constructor(public _myService: VehicleService) { }
+  constructor(public _myService: IdentityService) { }
 
   ngOnInit() {
     this._myService.getIdentityInfo()

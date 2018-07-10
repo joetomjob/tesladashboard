@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {VehicleService} from '../../mock-services/vehicle.service';
 import {StateOfChare} from '../../models/stateofcharge-model';
+import {StateOfchargeService} from '../../services/state0fcharge-service';
 
 @Component({
   selector: 'app-stateofcharge',
@@ -14,7 +14,7 @@ export class StateofchargeComponent implements OnInit {
   _remainingMileage: number = 0;
   _range: number = -1;
   _mileagepercent: number = -1;
-  constructor(public _myService: VehicleService) { }
+  constructor(public _myService: StateOfchargeService) { }
 
   ngOnInit() {
     this.refreshData();
