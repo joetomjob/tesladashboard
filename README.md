@@ -1,4 +1,4 @@
-# SampleAngularSproject
+# SampleAngularProject
 
 ## About
 The application manages the information of car and communicate with the car through different controls. The application was built usong Angular 6 framework. The application is best viewed in chrome browser. The application is responsive and will not break the layout in any device (tablets / phone etc). <br />
