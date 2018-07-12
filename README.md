@@ -1,16 +1,7 @@
-# Vehicle Information System
+# SampleAngularSproject
 
 ## About
-The application "Vehicle Information System" manages the vehicle information and communicate with the vehicle through different controls. The application was built usong Angular 6 framework. The application is best viewed inchrome browser. Some of the features provided by the application are: <br />
-	> Identity - Shows information about the car nick name, VIN, vahicle databaseid and Environment. The data in the page are static. <br />
-	> Configuration - Configuration is the features of the car like model, color, wheels, sunroofa and dual motor. The data is static. <br />
-	> State of Charge - State of charge shows the charge remaining and the miles remaining for the car. The data in this part is dynamic. It changes with time based on the data available from the backend. <br />
-	> Driver State - The driver state part in the screen shows the speed, acceleration and gear information. The data in this page is dynamic and changes based on the data available from backend. <br />
-	> Body Controls - Body Controls - This part handles the Door, Windows, Sunroof and charge port. The user can open/close the windows, doors, sunroof and chargeport using the controls available in this part. <br />
-	> HVAC - The ambient temperature, external temperature and fan speed are show in this module. Also the user has the provision to set the target temperature and change fan speed in this section. The temperature values and fanspeed changes based on the values from the backend. <br />
-	> Firmware - The installed version of the software is shown in this section. If a new software version is installed, that installing version is also shown in this page along with the scrollbar. <br />
-
-The application is responsive and will not break the layout in any device (tablets / phone etc). <br />
+The application manages the information of car and communicate with the car through different controls. The application was built usong Angular 6 framework. The application is best viewed in chrome browser. The application is responsive and will not break the layout in any device (tablets / phone etc). <br />
 
 ## Structure
 The structure of the application is as follows
