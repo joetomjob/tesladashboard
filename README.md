@@ -13,7 +13,7 @@ The application "Vehicle Information System" manages the vehicle information and
 The application is responsive and will not break the layout in any device (tablets / phone etc). <br />
 
 ## Structure
-
+The structure of the application is as follows
 > There were 7 components created for the 7 features mentioned above. <br />
 > Separate models were created (7 of them) for each component. <br />
 > Seven services were also created, one for each component. <br />
