@@ -10,7 +10,7 @@
   font-size: 1.25vmin;
   font-family: Arial;
   text-align: center;
-  text-align-all: center;
+  padding-top: 0.5vh;
 }
 
 .battery:after {

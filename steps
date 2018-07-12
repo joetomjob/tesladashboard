@@ -1,0 +1,14 @@
+1) Install current version of node.js from the following link: https://nodejs.org/en/download/current/
+   Yon can download the file for the corresponding operating system(Linux/Mac/Windows). Once downloaded, click on it and follow the instructions to install it.
+2) After step 1, install Angular CLI globally. For this, open the terminal and run the command "sudo npm install -g @angular/cli".
+3) Unzip the compressed folder.
+4) Open the terminal and go into the folder. (cd into the folder).
+5) Run the command "npm install" in terminal.
+6) Run the command "ng serve -o" in terminal.
+7) The application will be opened in the browser
+
+*******************************************************
+>>The application is an Angular application
+>> The application is best viewed in chrome browser.
+>> Each control (body controls, hvac etc) has its own components. This is created in the components folder which is inside app/shared folder.
+>> Service is created for each control. (in the folder: app/shared/services)
