@@ -13,6 +13,7 @@ The application "Vehicle Information System" manages the vehicle information and
 The application is responsive and will not break the layout in any device (tablets / phone etc). <br />
 
 ## Structure
+
 > There were 7 components created for the 7 features mentioned above. <br />
 > Separate models were created (7 of them) for each component. <br />
 > Seven services were also created, one for each component. <br />
@@ -20,7 +21,6 @@ The application is responsive and will not break the layout in any device (table
 > The service gets data from the mock data files stored in the "mock-data" folder in the "assets" folder. <br />
 > The home page just loads all the controls from the shared folder. <br />
 > The layout used is css grid inside a css flex. <br />
-
 
 ## How to run
 ### Dependencies
